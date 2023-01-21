@@ -1,0 +1,16 @@
+<nav xmlns:sec="http://www.w3.org/1999/xhtml">
+  <div class="sidebar-button">
+    <span class="dashboard">Dashboard</span>
+  </div>
+  <div class="search-box">
+    <input type="text" id="myInput" onkeyup="filterSearchBar()" placeholder="Search...">
+  </div>
+
+  <div class="profile-details">
+    <div sec:authorize="hasRole('ROLE_ADMIN')">
+      <img th:src="@{/image/admin.jpg}" alt="">
+    </div>
+    <span class="admin_name" sec:authentication="name"></span>
+<!--    <i class='bx bx-chevron-down' ></i>-->
+  </div>
+</nav>

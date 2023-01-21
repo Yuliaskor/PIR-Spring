@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Aplikacja do hospitowania zajeć</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link th:href="@{/styles/cssandjs/style.css}" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div th:replace="/fragments/sidebar">
+
+</div>
+<section class="home-section">
+  <div th:replace="/fragments/header"></div>
+
+  <div class="home-content">
+    <p>&nbsp;</p>
+    <p align="center" th:id="title"><strong>Procedura hospitowania zorganizowanych zajęć dydaktycznych </strong></p>
+    <p align="center"><strong>prowadzonych w Politechnice Wrocławskiej</strong></p>
+    <p>&nbsp;</p>
+    <ol>
+      <li>Procedurą hospitowania zajęć dydaktycznych objęci są nauczyciele akademiccy, doktoranci i specjaliści spoza Uczelni, prowadzący zorganizowane zajęcia dydaktyczne: wykład, seminarium, ćwiczenia, zajęcia laboratoryjne, zajęcia projektowe, studenckie praktyki zawodowe zwane dalej &bdquo;zajęciami&rdquo;.</li>
+      <li>Za organizację hospitacji zajęć, opracowanie i wykorzystanie ich wynik&oacute;w, zwłaszcza <br /> w procesie zapewniania i oceny jakości kształcenia, odpowiada dziekan wydziału/dyrektor studium.</li>
+      <li>Dziekan wydziału/dyrektor studium powołuje Wydziałowy/Studyjny Zesp&oacute;ł <br /> ds. Hospitowania Zajęć (WZHZ/SZHZ).
+        <li>W okresie pierwszych 4 tygodni każdego semestru dziekan w porozumieniu <br /> z przewodniczącym Wydziałowej Komisji ds. Oceny i Zapewniania Jakości Kształcenia (WKOZJK), a dyrektor studium w porozumieniu z przewodniczącym Komisji ds. Oceny i Zapewniania Jakości Kształcenia (KOZJK) opracowuje Ramowy harmonogram hospitacji zajęć (załącznik nr 1).</li>
+      <li>Dyrektor filii/dziekan szkoły doktorskiej w terminie pierwszych 2 tygodni przedstawia dziekanowi wydziału, na kt&oacute;rym zam&oacute;wiono zajęcia, propozycję wykazu zajęć do hospitacji.</li>
+        <li>W przypadku zaplanowania hospitacji zajęć prowadzonych przez nauczyciela akademickiego będącego pracownikiem innej jednostki Politechniki Wrocławskiej, dziekan wydziału/dyrektor studium niezwłocznie informuje o tym pisemnie kierownika jednostki organizacyjnej Uczelni, kt&oacute;rej zlecił wykonanie tych zajęć, przekazując informacje zawarte w Ramowym harmonogramie hospitacji zajęć.</li>
+
+      <li>Hospitacja zajęć jest prowadzona przez Zesp&oacute;ł hospitujący wyznaczony przez dziekana wydziału/dyrektora studium w Ramowym harmonogramie hospitacji zajęć, przy czym na wydziale/studium w składzie zespołu przynajmniej jedna osoba jest członkiem WZHZ/SZHZ.</li>
+      <li>Dziekan wydziału/dyrektor studium informuje osoby hospitowane o ujęciu ich oraz ich zajęć w Ramowym harmonogramie hospitacji zajęć, a członk&oacute;w Zespołu hospitującego o powierzeniu im hospitacji określonych grup zajęciowych.</li>
+      <li id="pkt9">Dziekan wydziału/dyrektor studium może zlecić przeprowadzenie hospitacji zajęć poza ustalonym harmonogramem, w tym na wniosek dziekana szkoły doktorskiej/dyrektora filii. </li>
+      <li>Hospitacja zajęć odbywa się w spos&oacute;b niezapowiedziany, w dowolnym terminie zajęć.</li>
+      <li>W przypadku hospitacji zajęć realizowanych w formie zdalnej &ndash; synchronicznej lub mieszanej &ndash; synchronicznej, prowadzący (hospitowany), na polecenie dziekana/dyrektora studium, zobowiązany jest umożliwić członkom zespołu hospitującego uczestnictwo w każdych zajęciach w semestrze, podlegających hospitacji.</li>
+      <li>Hospitacje zajęć prowadzonych przez nauczycieli akademickich dokonywane są nie rzadziej niż raz na cztery lata.</li>
+      <li>Hospitacje zajęć prowadzonych samodzielnie przez doktorant&oacute;w odbywają się nie rzadziej niż raz na dwa lata.</li>
+      <li>O hospitowaniu zajęć prowadzonych przez specjalistę spoza Uczelni decyduje dziekan wydziału/dyrektor studium, dla kt&oacute;rego specjalista prowadzi zajęcia.</li>
+      <li>Zesp&oacute;ł hospitujący przeprowadza hospitację po uprzednim zapoznaniu się z&nbsp;aktualną Kartą Przedmiotu.</li>
+      <li>Protok&oacute;ł z hospitacji zajęć (załącznik nr 2) jest dokumentem potwierdzającym wykonanie przez Zesp&oacute;ł hospitujący powierzonego mu zadania.</li>
+      <li>Dziekan wydziału/dyrektor studium zlecając hospitacje zajęć może wprowadzać zmiany do załącznika nr 2, uwzględniając specyfikę zajęć.</li>
+      <li>Zesp&oacute;ł hospitujący sporządza Protok&oacute;ł z hospitacji zajęć (załącznik nr 2) w jednym egzemplarzu, kt&oacute;rego treść omawia z hospitowanym w ciągu pierwszego tygodnia po hospitacji, przekazując mu uwagi i zalecenia.</li>
+      <li>Hospitowany poświadcza, podpisem na protokole, przyjęcie oceny do wiadomości. Zesp&oacute;ł hospitujący niezwłocznie przekazuje protok&oacute;ł dziekanowi wydziału/dyrektorowi studium, z zachowaniem poufności.</li>
+      <li>Dane osobowe zawarte w protokołach hospitacyjnych są chronione na podstawie Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. <em>w sprawie ochrony os&oacute;b fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE</em> (tzw. RODO).</li>
+      <li>Osoby uczestniczące w hospitacji zajęć dydaktycznych i mające dostęp do dokument&oacute;w z hospitacji zobowiązane są do zachowania w tajemnicy informacji związanych z tymi czynnościami (w tym r&oacute;wnież danych osobowych). Zabronione jest wykorzystywanie takich informacji w innych celach.</li>
+      <li>Hospitowanemu przysługuje prawo odwołania się od oceny końcowej do dziekana wydziału/dyrektora studium w terminie 14 dni kalendarzowych od dnia zapoznania się z treścią protokołu.</li>
+      <li>Dziekan wydziału/dyrektor studium rozpatruje odwołanie w&nbsp;terminie 14 dni kalendarzowych od dnia złożenia pisemnego odwołania.</li>
+      <li>Opracowanie i analizę wszystkich protokoł&oacute;w z hospitacji zajęć, przeprowadzonych w&nbsp;danym semestrze, wykonują, z zachowaniem poufności, osoby upoważnione przez dziekana wydziału/dyrektora studium, kt&oacute;re przekazują zbiorcze wyniki hospitacji zajęć odpowiednio dziekanowi wydziału/dyrektorowi studium, w postaci semestralnego raportu.</li>
+      <li>Dziekan wydziału/dyrektor studium, po zapoznaniu się z semestralnym raportem, podejmuje decyzje dotyczące:</li>
+      <ol class="ol-text" type = "a">
+        <li>dodatkowych hospitacji wskazanych zajęć (pkt 9)  oraz terminu ich przeprowadzenia,</li>
+        <li>dodatkowego ankietyzowania wskazanych zajęć,</li>
+        <li>personalnej obsady zajęć,</li>
+        <li>przekazania stosownych informacji członkom WKOZJK/KOZJK,</li>
+        <li>przekazania raportu semestralnego z hospitacji zajęć przeprowadzonych na wniosek dziekana zamawiającego zajęcia /dziekana szkoły doktorskiej/dyrektora filii,</li>
+        <li>udostępnienia kierownikowi katedry protokoł&oacute;w z hospitacji/semestralnego raportu w zakresie dotyczącym pracownik&oacute;w danej katedry.</li>
+      </ol>
+    </ol>
+    <a href="#title">Idz do góry </a>
+  </div>
+</section>
+
+<footer>
+  <p>Załącznik do ZW 46/2021</p>
+</footer>
+
+</body>
+</html>

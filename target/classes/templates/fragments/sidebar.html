@@ -1,0 +1,19 @@
+<div class="sidebar" xmlns:sec="http://www.w3.org/1999/xhtml">
+    <div class="logo-details">
+        <!--  <img class="img" th:src="@{/img/PWr.webp}" alt="alternatetext"> -->
+        <span class="logo_name">PWr Hospitacja zajęć</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a th:href="@{/info}">
+                <span class="links_name">Info </span>
+            </a>
+        </li>
+        <li class="log_out">
+            <form id="logoutForm" method="GET" th:action="@{/logout}">
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            </form>
+            <a onclick="document.forms['logoutForm'].submit()"><span class="links_name">Logout</span></a>
+        </li>
+    </ul>
+</div>
