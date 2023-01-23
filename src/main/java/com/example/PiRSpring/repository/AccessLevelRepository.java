@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AccessLevelRepository extends JpaRepository<AccessLevel, Integer> {
+
+    AccessLevel findAllByLevel(String level);
 }

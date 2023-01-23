@@ -9,9 +9,11 @@ import javax.persistence.*;
 @Table(name = "employee")
 @Getter
 @Setter
+@SequenceGenerator(name="employee_id_seq", initialValue=20, allocationSize=100)
 public class Employee {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="employee_id_seq")
     private Integer id;
 
     @Column(name = "first_name")
